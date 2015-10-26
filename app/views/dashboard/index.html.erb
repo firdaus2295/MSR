@@ -1,0 +1,224 @@
+<!-- top header -->
+<div class="banner">
+	<div class="container">
+		<div class="top-header">
+				<div class="top-left">
+					<ul>
+						<li><a href="#">POPULAR</a></li>
+						<li><a href="machinery.html">MACHINERY</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="top-right">
+					<ul>
+						<li><a class="fb" href="#"></a></li>
+						<li><a class="twi" href="#"></a></li>
+						<li><a class="pin" href="#"></a></li>
+						<li><a class="goog" href="#"></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+				<div class="top-logo">
+					<a href="/dashboard/index"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 
+                        <span>MSR</span>
+                        <i>Utara Enterprise</i>
+					
+					</a>
+				</div>
+		</div>
+		<div class="top-nav">
+					<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> </a>
+<!--							<a class="scroll top-indus" href="#top-industries">TOP INDUSTRIES</a>-->
+							<div class="clearfix"></div>
+					</div>
+					<div class="box" id="box">
+						<div class="box_content">        					                         
+							<div class="box_content_center">
+								<div class="form_content">
+									<div class="menu_box_list">
+										<ul>
+											<li><a class="active" href="index.html"><span>home</span></a></li>
+											<li><a href="about.html"><span>about</span></a></li>
+											<li><a href="typography.html"><span>services</span></a></li>
+											<li><a href="contact.html"><span>Contact</span></a></li>
+										
+										</ul>
+									</div>
+									<a class="boxclose" id="boxclose"> <span> </span></a>
+								</div>                                  
+							</div> 	
+						</div> 
+					</div>       	  
+		</div>
+				<!--start-click-drop-down-menu-->
+						<!--start-dropdown-->
+						 <script type="text/javascript">
+							var $ = jQuery.noConflict();
+								$(function() {
+									$('#activator').click(function(){
+										$('#box').animate({'top':'0px'},900);
+									});
+									$('#boxclose').click(function(){
+									$('#box').animate({'top':'-1000px'},900);
+									});
+								});
+								$(document).ready(function(){
+								//Hide (Collapse) the toggle containers on load
+								$(".toggle_container").hide(); 
+								//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+								$(".trigger").click(function(){
+									$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+								});
+													
+							});
+						</script>
+				<!--//End-click-drop-down-menu-->
+		<div class="banner-info">
+			<!-- responsiveslides -->
+							<script src="js/responsiveslides.min.js"></script>
+								<script>
+									// You can also use "$(window).load(function() {"
+									$(function () {
+									 // Slideshow 4
+									$("#slider3").responsiveSlides({
+										auto: true,
+										pager: false,
+										nav: false,
+										speed: 500,
+										namespace: "callbacks",
+										before: function () {
+									$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+										}
+										});
+										});
+								</script>
+			<!-- responsiveslides -->
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-text">
+							<h3>EXPERIENCE & CRAFTSMANSHIP</h3>
+							<p>POWERED BY PEOPLE</p>
+<!--
+							<a href="#" class="hvr-rectangle-out button">SEE MORE</a>
+							<a href="#" class="hvr-rectangle-in button red">DOWNLOAD</a>
+-->
+						</div>
+					</li>
+					<li>
+						<div class="banner-text">
+							<h3>OUR GOAL IS CONTINUOUSLY</h3>
+							<p>SATISFY OUR CLIENTS</p>
+<!--
+							<a href="#" class="hvr-rectangle-out button">SEE MORE</a>
+							<a href="#" class="hvr-rectangle-in button red">DOWNLOAD</a>
+-->
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //top header -->
+<!-- banner-bottom -->
+<div class="banner-bottom">
+	<div class="container">
+		<h3 class="tittle">ABOUT THE PROJECT</h3>
+		<div class="strip"></div>
+		<p>Nam libero tempore, cum soluta nobis est eligendi optio 
+			cumque nihil impedit quo minus id quod maxime placeat facere
+			possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+			Temporibus autem quibusdam et aut officiis debitis aut rerum 
+			necessitatibus saepe eveniet ut et voluptates repudiandae sint 
+			et molestiae non recusandae.</p>
+	</div>
+</div>
+<!-- //banner-bottom -->
+<!--destination-starts-->
+<div class="destination">
+	<div class="container">
+		<div class="destination-1">
+			<div class="col-md-3 destination-left">
+                <%= image_tag("1.jpg", height:'285px')%>
+				<div class="tool">
+                    <%= image_tag("arrow.png")%>
+				</div>
+			</div>
+			<div class="col-md-3 destination-left destination-middle">
+				<h4>PRIMARY INDUSTRY</h4>
+				<div class="strip one"></div>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority believable.</p>
+			</div>
+			<div class="col-md-3 destination-left destination-right">
+				<%= image_tag("2.jpg", height:'285px')%>
+				<div class="tool">
+					<%= image_tag("arrow.png")%>
+				</div>
+			</div>	
+			<div class="col-md-3 destination-left destination-middle">
+				<h4>SECONDARY INDUSTRY</h4>
+				<div class="strip one"></div>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority believable.</p>
+			</div>
+			<div class="col-md-3 destination-left destination-middle">
+				<h4>TERRITORY INDUSTRY</h4>
+				<div class="strip one"></div>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority believable.</p>
+			</div>
+			<div class="col-md-3 destination-left">
+				<%= image_tag("3.jpg", height:'285px')%>
+				<div class="tool two">
+					<%= image_tag("arrow.png")%>
+				</div>
+			</div>
+			<div class="col-md-3 destination-left destination-middle">
+				<h4>LARGE SCALE INDUSTRY</h4>
+				<div class="strip one"></div>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority believable.</p>
+			</div>
+			<div class="col-md-3 destination-left">
+				<%= image_tag("4.jpg", height:'285px')%>
+				<div class="tool two">
+					<%= image_tag("arrow.png")%>
+				</div>
+			</div>
+			
+			<div class="clearfix"></div>	
+		</div>
+	</div>
+</div>
+<!--destination-end-->
+<!-- footer -->
+<!-- copy -->
+<div class="div2">
+	<div class="container">
+		<p>© 2016 MSR Utara Enterprise. All rights reserved | Design by <a href="3">AFS Company</a></p>
+	</div>
+</div>
+<!-- copy -->
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+<!-- footer -->
